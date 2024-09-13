@@ -28,3 +28,7 @@ print('------------------')
 # print(data1.groupby([data1['年份'], data1['区域']]).mean())
 # 按照年份和区域分组求平均值
 print(data1.groupby(level=['年份','区域']).mean())
+print('------------------')
+print(data1.describe())
+print('------------------')
+print(data1.agg(['count', 'mean'])) # count 计数 mean 平均值
